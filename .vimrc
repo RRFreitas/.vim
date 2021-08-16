@@ -90,6 +90,8 @@ let g:syntastic_auto_loc_list = 1
 inoremap {<CR> {<CR>}<C-O>O
 inoremap jk <ESC>
 inoremap JK <ESC>
+nnoremap t 0i//<ESC>$
+nnoremap T 0xx$
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 nnoremap <F6> :NERDTreeToggle<CR>
