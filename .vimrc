@@ -60,7 +60,7 @@ syntax enable
 syntax on
 "set t_Co=256
 "let g:solarized_termcolors=256
-set background=dark
+"set background=dark
 colorscheme molokai
 
 
@@ -85,7 +85,7 @@ hi! MatchParen cterm=NONE,bold gui=NONE,bold guibg=bg guifg=lightblue ctermbg=bg
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 "let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 0
             
 inoremap {<CR> {<CR>}<C-O>O
 inoremap jk <ESC>
@@ -94,7 +94,7 @@ nnoremap t 0i//<ESC>$
 nnoremap T 0xx$
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
-nnoremap <F6> :NERDTreeToggle<CR>
+nnoremap <TAB> :NERDTreeToggle<CR>
 nmap <silent> <C-C> :silent noh<CR>
 
 autocmd filetype cpp nnoremap <F5> :w <bar> !g++ % -o %:r && ./%:r <CR>
